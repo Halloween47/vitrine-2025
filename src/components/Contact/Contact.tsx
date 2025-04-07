@@ -17,11 +17,11 @@ export default function ContactSection() {
     <a href="mailto:example@exemple.com" className="flex items-center gap-2 text-gray-400 hover:text-white" id={styles.test} >
       <Mail size={24} /> tonemail@example.com
     </a>
-    <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer"
+    <a href="www.linkedin.com/in/thomaslecontedeveloppeur" target="_blank" rel="noopener noreferrer"
       className="flex items-center gap-2 text-gray-400 hover:text-white" id={styles.test}>
       <Linkedin size={24} /> LinkedIn
     </a>
-    <a href="https://www.malt.fr/profile/tonprofil" target="_blank" rel="noopener noreferrer"
+    <a href="https://www.malt.fr/profile/thomasleconte2?overview" target="_blank" rel="noopener noreferrer"
       className="flex items-center gap-2 text-gray-400 hover:text-white" id={styles.test}>
       <Briefcase size={24} /> Malt
     </a>
