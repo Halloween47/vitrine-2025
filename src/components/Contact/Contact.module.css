@@ -1,0 +1,14 @@
+#contact {
+    padding: 20px;
+}
+.title {
+    color: red;
+}
+#element {
+    gap: 2;
+    margin-top: 20px;
+}
+#test {
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+}
