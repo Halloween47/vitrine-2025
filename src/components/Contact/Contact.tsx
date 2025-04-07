@@ -14,7 +14,7 @@ export default function ContactSection() {
 
   {/* 🚀 Ligne de contact rapide */}
   <div className="flex flex-col sm:flex-row justify-center gap-4 p-6 rounded-md" id={styles.element}>
-    <a href="mailto:example@exemple.com" className="flex items-center gap-2 text-gray-400 hover:text-white" id={styles.test} >
+    <a href="mailto:lecontethomas.contact@proton.me" className="flex items-center gap-2 text-gray-400 hover:text-white" id={styles.test} >
       <Mail size={24} /> tonemail@example.com
     </a>
     <a href="https://www.linkedin.com/in/thomaslecontedeveloppeur" target="_blank" rel="noopener noreferrer"
