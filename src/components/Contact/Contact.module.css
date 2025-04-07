@@ -10,5 +10,5 @@
 }
 #test {
     border-bottom: 2px solid white;
-    padding-bottom: 8px;
+    padding: 8px 0px;
 }

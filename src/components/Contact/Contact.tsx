@@ -7,14 +7,14 @@ export default function ContactSection() {
 
   return (
     <section id={styles.contact} className="text-white bg-sky-950 px-6 py-12">
-  <h2 className="text-1xl">Me Contacter</h2>
+  <h2 className="text-2xl m-2">Me Contacter</h2>
   <p className="text-gray-400">
     Contactez-moi directement ou laissez-moi un message via le formulaire.
   </p>
 
   {/* 🚀 Ligne de contact rapide */}
   <div className="flex flex-col sm:flex-row justify-center gap-4 p-6 rounded-md" id={styles.element}>
-    <a className="flex items-center gap-2 text-gray-400 hover:text-white" id={styles.test} >
+    <a href="mailto:example@exemple.com" className="flex items-center gap-2 text-gray-400 hover:text-white" id={styles.test} >
       <Mail size={24} /> tonemail@example.com
     </a>
     <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer"
