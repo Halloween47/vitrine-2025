@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Textarea } from "@/components/ui/Textarea";
 import { Mail, Linkedin, Briefcase, Calendar } from "lucide-react";
 
 export default function ContactSection() {

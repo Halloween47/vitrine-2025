@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/Card";
 
 export default function OffreValeurAjoutee() {
   return (
