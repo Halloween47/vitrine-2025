@@ -216,11 +216,11 @@ const servicesData = [
   },
   {
     title: "WordPress",
-    image: "https://cdn.pixabay.com/photo/2022/09/29/14/13/laptop-7488275_1280.jpg"
+    image: "https://cdn.pixabay.com/photo/2020/06/01/16/58/wordpress-5247502_1280.jpg"
   },
   {
     title: "E-commerce",
-    image: "https://cdn.pixabay.com/photo/2017/06/10/07/20/laptop-2389237_1280.jpg"
+    image: "https://cdn.pixabay.com/photo/2023/08/23/06/29/forex-8207730_1280.jpg"
   }
 ];
 
@@ -260,12 +260,19 @@ export default function Services() {
         <div className="overflow-x-scroll w-full px-4 scroll-smooth snap-x snap-mandatory scrollbar-hide">
           <div className="flex w-max gap-4">
             {servicesData.map((service, index) => (
+              // <div
+              //   key={index}
+              //   className={`flex-shrink-0 w-[80%] sm:w-[60%] snap-center transition-all duration-500 ${
+              //     index === currentIndex ? 'scale-100 opacity-100' : 'scale-90 opacity-50'
+              //   }`}
+              // >
               <div
-                key={index}
-                className={`flex-shrink-0 w-[80%] sm:w-[60%] snap-center transition-all duration-500 ${
-                  index === currentIndex ? 'scale-100 opacity-100' : 'scale-90 opacity-50'
-                }`}
-              >
+  key={index}
+  className={`flex-shrink-0 w-[250px] md:w-[300px] snap-center transition-all duration-500 ${
+    index === currentIndex ? 'scale-100 opacity-100' : 'scale-90 opacity-50'
+  }`}
+>
+
                 <div className="bg-[#03256C] rounded-xl p-4 shadow-lg flex flex-col items-center">
                   <img
                     src={service.image}
