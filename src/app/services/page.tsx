@@ -547,7 +547,7 @@ export default function Services() {
         />
 
         {/* Scrollable zone */}
-        <div
+        {/* <div
           className="overflow-x-scroll w-full px-4 scroll-smooth snap-x snap-mandatory scrollbar-hide"
           ref={containerRef}
         >
@@ -576,7 +576,40 @@ export default function Services() {
               </div>
             ))}
           </div>
+        </div> */}
+        <div className="overflow-x-scroll w-full px-4 scroll-smooth snap-x snap-mandatory scrollbar-hide" ref={containerRef}>
+  <div className="flex w-max gap-4">
+    {/* Padding gauche */}
+    <div className="flex-shrink-0 w-[50vw]" />
+
+    {servicesData.map((service, index) => (
+      <div
+        key={index}
+        data-index={index}
+        ref={setCardRef(index)}
+        className={`flex-shrink-0 w-[250px] md:w-[300px] snap-center transition-all duration-500 ${
+          index === currentIndex ? 'scale-100 opacity-100' : 'scale-95 opacity-80'
+        }`}
+      >
+        <div className="bg-[#03256C] rounded-xl p-4 shadow-lg flex flex-col items-center">
+          <img
+            src={service.image}
+            alt={service.title}
+            className="rounded-xl w-full h-[300px] object-cover"
+          />
+          <p className="text-white text-xl font-semibold mt-4 text-center">
+            {service.title}
+          </p>
         </div>
+      </div>
+    ))}
+
+    {/* Padding droite */}
+    <div className="flex-shrink-0 w-[50vw]" />
+  </div>
+</div>
+
+
 
         {/* Bouton droit */}
         <Button
