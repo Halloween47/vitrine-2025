@@ -4,6 +4,7 @@ import Contact from "@/components/Contact/Contact";
 import styles from "./page.module.css";
 import Ressources from "@/components/Ressources/Ressources";
 import Projets from "@/components/Projets/Projets";
+import Tarifs from "@/components/Tarifs/Tarifs";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Projets />
+        <Tarifs />
         <Ressources />
         <Contact />
       </main>
