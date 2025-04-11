@@ -108,6 +108,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import styles from "./page.module.css";
 import Button from '@mui/material/Button'
 // import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 // import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
@@ -210,7 +211,8 @@ export default function Services() {
         {/* Bouton gauche */}
         <Button
           onClick={handlePrev}
-          className="absolute left-1 z-10 rounded-full w-px"
+          id={styles.boutonNavigationLeft}
+          className="absolute left-1 z-10 rounded-full w-min m-0 p-1"
           variant="contained"
         >
           <ChevronLeftIcon />
@@ -271,7 +273,7 @@ export default function Services() {
             {service.title}
           </p>
           <Button
-          className=" z-10 p-2 w-full m-3"
+          className=" z-10 p-2 w-full m-3 p-1"
           variant="contained"
           onClick={handleShowDetails}
         >
@@ -292,7 +294,8 @@ export default function Services() {
         {/* Bouton droit */}
         <Button
           onClick={handleNext}
-          className="absolute right-1 z-10 rounded-full w-px"
+          id={styles.boutonNavigationRight}
+          className="absolute right-1 z-10 rounded-full w-min m-0 p-1"
           variant="contained"
         >
           <ChevronRightIcon />
