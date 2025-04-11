@@ -4,7 +4,7 @@ import React from 'react'
 export const Details = () => {
   return (
     <div className="bg-[#ffffff] p-2 text-xl w-full flex flex-col">
-    <p className=' py-2 text-black font-bold text-sm text-center'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
+    <p className=' py-2 text-black font-bold text-lg text-center'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
     <div className="label flex gap-3 mx-auto">
       <Chip label="Prototype" color="primary" size='small'/>
       <Chip label="UX" color="primary" size='small'/>
@@ -43,7 +43,7 @@ export const Details = () => {
     </div>
     </div> */}
     <div className="methodes my-5">
-      <p className='text-sm font-semibold text-black'>Ma méthode de travail</p>
+      <p className='text-base font-semibold text-black'>Ma méthode de travail</p>
       <div className='details'>
         <li className="formule text-sm py-1 text-black list-non ml-3">Brief rapide (appel ou formulaire)</li>
         <li className="formule text-sm py-1 text-black list-non ml-3">Proposition visuelle + validation</li>
