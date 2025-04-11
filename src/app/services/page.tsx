@@ -133,6 +133,7 @@ const servicesData = [
 
 export default function Services() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showDetails, setShowDetails] = useState(false);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -160,6 +161,14 @@ export default function Services() {
       (currentIndex - 1 + servicesData.length) % servicesData.length
     scrollToCard(prevIndex)
   }
+
+    const handleShowDetails = () => {
+    if(showDetails) {
+      setShowDetails(false);
+    } else {
+      setShowDetails(true);
+    }
+  };
 
   // Observer pour mettre à jour automatiquement l'index selon la carte visible
   useEffect(() => {
@@ -262,14 +271,14 @@ export default function Services() {
             {service.title}
           </p>
           <Button
-          onClick={handlePrev}
           className=" z-10 p-2 w-full m-3"
           variant="contained"
+          onClick={handleShowDetails}
         >
           Voir détails
         </Button>
         </div>
-        <Details />
+        {showDetails && <Details />}
       </div>
     ))}
 
