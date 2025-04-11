@@ -105,7 +105,7 @@ export default function Services() {
         <Button
           onClick={handlePrev}
           id={styles.boutonNavigationLeft}
-          className="absolute left-1 z-10 rounded-full w-min m-0 p-1"
+          className="absolute left-1 z-10 rounded-full w-min m-0 p-2"
           variant="contained"
         >
           <ChevronLeftIcon />
@@ -188,7 +188,7 @@ export default function Services() {
         <Button
           onClick={handleNext}
           id={styles.boutonNavigationRight}
-          className="absolute right-1 z-10 rounded-full w-min m-0 p-1"
+          className="absolute right-1 z-10 rounded-full w-min m-0 p-2"
           variant="contained"
         >
           <ChevronRightIcon />
