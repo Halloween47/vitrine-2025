@@ -3,10 +3,10 @@ import React from 'react'
 
 export const Details = () => {
   return (
-    <div className="bg-[#d52a34] p-2 text-xl w-full flex flex-col  items-center">
-    <p className='text-md py-2'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
-    <p className='text-lg py-2'>À partir de 600 € ou Pack complet : 950 € TTC</p>
-    <div className="formules text-sm ">
+    <div className="bg-[#ffffff] p-2 text-xl w-full flex flex-col  items-center">
+    <p className=' py-2 text-black font-bold text-sm text-center'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
+    <p className='text-lg py-2 text-black text-xs font-medium'>À partir de 600 € ou Pack complet : 950 € TTC</p>
+    {/* <div className="formules text-sm ">
     <div className="starter">
     <p className='text-xl'>Starter (one-page simple)</p>
     <div className='details'>
@@ -36,37 +36,34 @@ export const Details = () => {
     <li className="formule py-1">Livraison clé en main + support 1 semaine</li>
     </div>
     </div>
-    </div>
-    <div className="methodes text-sm ">
-    <div className="starter">
-    <p className='text-xl'>Ta méthode de travail</p>
-    <div className='details'>
-    <li className="formule py-1">Brief rapide (appel ou formulaire)</li>
-    <li className="formule py-1">Proposition visuelle + validation</li>
-    <li className="formule py-1">Développement (avec points d&rsquo;étapes)</li>
-    <li className="formule py-1">Livraison & accompagnement</li>
-    </div>
-    </div>
+    </div> */}
+    <div className="methodes">
+      <p className='text-sm font-semibold text-black'>Ta méthode de travail</p>
+      <div className='details'>
+        <li className="formule text-sm py-1 text-black list-non ml-5">Brief rapide (appel ou formulaire)</li>
+        <li className="formule text-sm py-1 text-black list-non ml-5">Proposition visuelle + validation</li>
+        <li className="formule text-sm py-1 text-black list-non ml-5">Développement (avec points d&rsquo;étapes)</li>
+        <li className="formule text-sm py-1 text-black list-non ml-5">Livraison & accompagnement</li>
+      </div>
     </div>
     <div className="delais text-sm ">
-    <div className="starter">
-    <p className='text-xl'>Délais</p>
-    <div className='details'>
-    <li className="formule py-1">Livraison en 5 à 10 jours ouvrés selon la complexité</li>
-    </div>
-    </div>
+      <p className='text-sm font-semibold text-black'>Délais</p>
+      <div className='details'>
+        <li className="formule text-sm py-1 text-black list-non ml-5">Livraison en 5 à 10 jours ouvrés selon la complexité</li>
+      </div>
     </div>
     <div>
       <h2> Démo ou visuel</h2>
-      <li>Une image ou mockup de site vitrine déjà fait</li>
-      <li>Ou un Before/After (ex : refonte d’un site)</li>
+      <li className='formule text-sm py-1 text-black list-non ml-5'>Une image ou mockup de site vitrine déjà fait</li>
+      <li className='formule text-sm py-1 text-black list-non ml-5'>Ou un Before/After (ex : refonte d’un site)</li>
     </div>
     <div>
+    <p className='text-base text-center mt-5 font-semibold text-black'>Dispo pour discuter de votre projet</p>
     <Button
-          className=" z-10 p-2 w-full m-3"
+          className=" z-10 p-2 mt-5 text-center w-full"
           variant="contained"
         >
-          Dispo pour discuter de votre projet → Contactez-moi ici
+           → Contactez-moi ici
         </Button>
     </div>
     </div>
