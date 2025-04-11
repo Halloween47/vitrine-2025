@@ -1,10 +1,15 @@
-import { Button } from '@mui/material'
+import { Button, Chip } from '@mui/material'
 import React from 'react'
 
 export const Details = () => {
   return (
     <div className="bg-[#ffffff] p-2 text-xl w-full flex flex-col  items-center">
     <p className=' py-2 text-black font-bold text-sm text-center'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
+    <div className="label flex gap-3">
+      <Chip label="Prototype" color="primary" size='small'/>
+      <Chip label="UX" color="primary" size='small'/>
+      <Chip label="Front-End" color="primary" size='small'/>
+    </div>
     <p className='text-lg py-2 text-black text-xs font-medium'>À partir de 600 € ou Pack complet : 950 € TTC</p>
     {/* <div className="formules text-sm ">
     <div className="starter">
