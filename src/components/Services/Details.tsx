@@ -1,5 +1,6 @@
 import { Button, Chip } from '@mui/material'
 import React from 'react'
+import StepperMethodeDeTravail from './StepperMethodeDeTravail'
 
 export const Details = () => {
   return (
@@ -45,14 +46,15 @@ export const Details = () => {
     <div className="methodes my-5">
       <p className='text-base font-semibold text-black'>Ma méthode de travail</p>
       <div className='details'>
-        <li className="formule text-sm py-1 text-black list-non ml-3">Brief rapide (appel ou formulaire)</li>
+        {/* <li className="formule text-sm py-1 text-black list-non ml-3">Brief rapide (appel ou formulaire)</li>
         <li className="formule text-sm py-1 text-black list-non ml-3">Proposition visuelle + validation</li>
         <li className="formule text-sm py-1 text-black list-non ml-3">Développement (avec points d&rsquo;étapes)</li>
-        <li className="formule text-sm py-1 text-black list-non ml-3">Livraison & accompagnement</li>
+        <li className="formule text-sm py-1 text-black list-non ml-3">Livraison & accompagnement</li> */}
+        <StepperMethodeDeTravail />
       </div>
     </div>
     <div className="delais text-sm my-5">
-      <p className='text-sm font-semibold text-black'>Délais</p>
+      <p className='text-base font-semibold text-black'>Délais</p>
       <div className='details'>
         <li className="formule text-sm py-1 text-black list-non ml-3">Livraison en 5 à 10 jours ouvrés selon la complexité</li>
       </div>
