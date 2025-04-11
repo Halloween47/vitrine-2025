@@ -3,14 +3,14 @@ import React from 'react'
 
 export const Details = () => {
   return (
-    <div className="bg-[#ffffff] p-2 text-xl w-full flex flex-col  items-center">
+    <div className="bg-[#ffffff] p-2 text-xl w-full flex flex-col">
     <p className=' py-2 text-black font-bold text-sm text-center'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
-    <div className="label flex gap-3">
+    <div className="label flex gap-3 mx-auto">
       <Chip label="Prototype" color="primary" size='small'/>
       <Chip label="UX" color="primary" size='small'/>
       <Chip label="Front-End" color="primary" size='small'/>
     </div>
-    <p className='text-lg py-2 text-black text-xs font-medium'>À partir de 600 € ou Pack complet : 950 € TTC</p>
+    <p className='text-lg py-2 text-black text-xs font-medium mt-3'>À partir de 600 € ou Pack complet : 950 € TTC</p>
     {/* <div className="formules text-sm ">
     <div className="starter">
     <p className='text-xl'>Starter (one-page simple)</p>
@@ -42,25 +42,25 @@ export const Details = () => {
     </div>
     </div>
     </div> */}
-    <div className="methodes">
-      <p className='text-sm font-semibold text-black'>Ta méthode de travail</p>
+    <div className="methodes my-5">
+      <p className='text-sm font-semibold text-black'>Ma méthode de travail</p>
       <div className='details'>
-        <li className="formule text-sm py-1 text-black list-non ml-5">Brief rapide (appel ou formulaire)</li>
-        <li className="formule text-sm py-1 text-black list-non ml-5">Proposition visuelle + validation</li>
-        <li className="formule text-sm py-1 text-black list-non ml-5">Développement (avec points d&rsquo;étapes)</li>
-        <li className="formule text-sm py-1 text-black list-non ml-5">Livraison & accompagnement</li>
+        <li className="formule text-sm py-1 text-black list-non ml-3">Brief rapide (appel ou formulaire)</li>
+        <li className="formule text-sm py-1 text-black list-non ml-3">Proposition visuelle + validation</li>
+        <li className="formule text-sm py-1 text-black list-non ml-3">Développement (avec points d&rsquo;étapes)</li>
+        <li className="formule text-sm py-1 text-black list-non ml-3">Livraison & accompagnement</li>
       </div>
     </div>
-    <div className="delais text-sm ">
+    <div className="delais text-sm my-5">
       <p className='text-sm font-semibold text-black'>Délais</p>
       <div className='details'>
-        <li className="formule text-sm py-1 text-black list-non ml-5">Livraison en 5 à 10 jours ouvrés selon la complexité</li>
+        <li className="formule text-sm py-1 text-black list-non ml-3">Livraison en 5 à 10 jours ouvrés selon la complexité</li>
       </div>
     </div>
     <div>
-      <h2> Démo ou visuel</h2>
-      <li className='formule text-sm py-1 text-black list-non ml-5'>Une image ou mockup de site vitrine déjà fait</li>
-      <li className='formule text-sm py-1 text-black list-non ml-5'>Ou un Before/After (ex : refonte d’un site)</li>
+      <h2 className='text-black my-5 text-center'>Ici Démo ou visuel</h2>
+      <li className='formule text-sm py-1 text-black list-non ml-3'>Une image ou mockup de site vitrine déjà fait</li>
+      <li className='formule text-sm py-1 text-black list-non ml-3'>Ou un Before/After (ex : refonte d’un site)</li>
     </div>
     <div>
     <p className='text-base text-center mt-5 font-semibold text-black'>Dispo pour discuter de votre projet</p>

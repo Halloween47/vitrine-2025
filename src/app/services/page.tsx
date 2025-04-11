@@ -210,7 +210,7 @@ export default function Services() {
         {/* Bouton gauche */}
         <Button
           onClick={handlePrev}
-          className="absolute left-2 z-10 rounded-full p-2 w-min"
+          className="absolute left-1 z-10 rounded-full w-px"
           variant="contained"
         >
           <ChevronLeftIcon />
@@ -257,7 +257,7 @@ export default function Services() {
         key={index}
         data-index={index}
         ref={setCardRef(index)}
-        className={`flex-shrink-0 w-[250px] md:w-[300px] snap-center transition-all duration-500 ${
+        className={`flex-shrink-0 w-[350px] md:w-[400px] snap-center transition-all duration-500 ${
           index === currentIndex ? 'scale-100 opacity-100' : 'scale-95 opacity-80'
         }`}
       >
@@ -292,7 +292,7 @@ export default function Services() {
         {/* Bouton droit */}
         <Button
           onClick={handleNext}
-          className="absolute right-2 z-10 rounded-full p-2 w-min"
+          className="absolute right-1 z-10 rounded-full w-px"
           variant="contained"
         >
           <ChevronRightIcon />
