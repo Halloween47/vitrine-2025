@@ -113,6 +113,7 @@ import Button from '@mui/material/Button'
 // import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import { Details } from '@/components/Services/Details';
 
 const servicesData = [
   {
@@ -260,7 +261,15 @@ export default function Services() {
           <p className="text-white text-xl font-semibold mt-4 text-center">
             {service.title}
           </p>
+          <Button
+          onClick={handlePrev}
+          className=" z-10 p-2 w-full m-3"
+          variant="contained"
+        >
+          Voir détails
+        </Button>
         </div>
+        <Details />
       </div>
     ))}
 
