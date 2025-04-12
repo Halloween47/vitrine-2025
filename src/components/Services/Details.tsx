@@ -7,9 +7,9 @@ export const Details = () => {
     <div className="bg-[#ffffff] p-4 text-xl w-full flex flex-col items-center">
       <p className=' py-2 text-black font-bold text-lg text-center'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
       <div className="label flex gap-3 mx-auto mb-5">
-        <Chip label="Prototype" color="primary" size='small'/>
-        <Chip label="UX" color="primary" size='small'/>
-        <Chip label="Front-End" color="primary" size='small'/>
+        <Chip label="Prototype" color="info" size='small'/>
+        <Chip label="UX" color="success" size='small'/>
+        <Chip label="Front-End" color="warning" size='small'/>
       </div>
       <Divider />
       <p className='text-lg py-2 text-black text-xs font-medium mt-3'>À partir de 600 € ou Pack complet : 950 € TTC</p>
@@ -55,10 +55,10 @@ export const Details = () => {
           <StepperMethodeDeTravail />
         </div>
       </div>
-      <div className="delais text-sm my-5">
-        <p className='text-base font-semibold text-black'>Délais</p>
+      <div className="delais text-sm my-5 bg-[#2933d4] p-4  rounded-md">
+        <p className='text-base font-semibold text-white'>Délais</p>
         <div className='details'>
-          <li className="formule text-sm py-1 text-black list-non ml-3">Livraison en 5 à 10 jours ouvrés selon la complexité</li>
+          <li className="formule text-sm py-1 text-white list-non ml-3">Livraison en 5 à 10 jours ouvrés selon la complexité</li>
         </div>
       </div>
       <div>
