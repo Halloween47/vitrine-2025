@@ -1,16 +1,17 @@
-import { Button, Chip } from '@mui/material'
+import { Button, Chip, Divider } from '@mui/material'
 import React from 'react'
 import StepperMethodeDeTravail from './StepperMethodeDeTravail'
 
 export const Details = () => {
   return (
-    <div className="bg-[#ffffff] p-2 text-xl w-full flex flex-col">
+    <div className="bg-[#ffffff] p-4 text-xl w-full flex flex-col">
     <p className=' py-2 text-black font-bold text-lg text-center'>Site Vitrine Professionnel Responsive – Prêt en 7 jours</p>
     <div className="label flex gap-3 mx-auto">
       <Chip label="Prototype" color="primary" size='small'/>
       <Chip label="UX" color="primary" size='small'/>
       <Chip label="Front-End" color="primary" size='small'/>
     </div>
+    <Divider />
     <p className='text-lg py-2 text-black text-xs font-medium mt-3'>À partir de 600 € ou Pack complet : 950 € TTC</p>
     {/* <div className="formules text-sm ">
     <div className="starter">
@@ -43,6 +44,7 @@ export const Details = () => {
     </div>
     </div>
     </div> */}
+    <Divider />
     <div className="methodes my-5">
       <p className='text-base font-semibold text-black'>Ma méthode de travail</p>
       <div className='details'>

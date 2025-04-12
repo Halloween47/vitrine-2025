@@ -19,7 +19,7 @@ const steps = [
       'Texte qui explique un peu plus en détail cette étape précise.',
   },
   {
-    label: 'Développement (avec points d&rsquo;étapes)</',
+    label: 'Développement (avec points d\'étapes)',
     description: `Texte qui explique un peu plus en détail cette étape précise.`,
   },
   {
@@ -44,14 +44,14 @@ export default function StepperMethodeDeTravail() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400 }}>
+    <Box sx={{ maxWidth: 400, backgroundColor: "#e1d8d3", p: 3 }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
             <StepLabel
               optional={
                 index === steps.length - 1 ? (
-                  <Typography variant="caption">Last step</Typography>
+                  <Typography variant="caption">Dernière étape</Typography>
                 ) : null
               }
             >
@@ -64,6 +64,7 @@ export default function StepperMethodeDeTravail() {
                   variant="contained"
                   onClick={handleNext}
                   sx={{ mt: 1, mr: 1 }}
+                  className='text-sm'
                 >
                   {index === steps.length - 1 ? 'Et voilà' : 'ET Ensuite ...'}
                 </Button>
@@ -80,10 +81,10 @@ export default function StepperMethodeDeTravail() {
         ))}
       </Stepper>
       {activeStep === steps.length && (
-        <Paper square elevation={0} sx={{ p: 3 }}>
-          <Typography>All steps completed - you&apos;re finished</Typography>
+        <Paper square elevation={0} sx={{ p: 1, textAlign: "center" }}>
+          <Typography>Et voilà comment je procède</Typography>
           <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-            Revenir à zéro
+            Recommencer la procédure
           </Button>
         </Paper>
       )}
