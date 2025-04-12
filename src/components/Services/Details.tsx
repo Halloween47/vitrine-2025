@@ -46,7 +46,7 @@ export const Details = () => {
       </div> */}
       <Divider />
       <div className="methodes my-5 text-center">
-        <p className='text-base font-semibold text-black mb-2'>Ma méthode de travail</p>
+        {/* <p className='text-base font-semibold text-black mb-2'>Ma méthode de travail</p> */}
         <div className='details'>
           {/* <li className="formule text-sm py-1 text-black list-non ml-3">Brief rapide (appel ou formulaire)</li>
           <li className="formule text-sm py-1 text-black list-non ml-3">Proposition visuelle + validation</li>

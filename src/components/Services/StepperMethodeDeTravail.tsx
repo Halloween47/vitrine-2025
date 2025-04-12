@@ -45,6 +45,8 @@ export default function StepperMethodeDeTravail() {
 
   return (
     <Box sx={{ maxWidth: 400, backgroundColor: "#e1d8d3", p: 3 }}>
+      
+      <p className='text-base font-semibold text-black mb-2'>Ma méthode de travail</p>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
