@@ -14,6 +14,7 @@ export default function Hero() {
         rounded-[5px]
         gap-5
         h-[20vh]
+        relative
       ">
         <h1 className="text-1xl font-bold leading-tight uppercase">
             Votre site mérite mieux<br/> qu’un simple template.
@@ -21,8 +22,9 @@ export default function Hero() {
         <p className="text-[14px] opacity-90 leading-tight pt-6">
         Créons ensemble une interface unique et performante pour votre activité.
         </p>
-        <div className="testGlobe">
           <EarthGlobe />
+        <div className="testGlobe flex justify-center items-center absolute bottom-2">
+          {/* <EarthGlobe /> */}
         </div>
       </section>
     );
