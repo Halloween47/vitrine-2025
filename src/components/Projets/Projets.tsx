@@ -14,8 +14,8 @@ export default function Projets() {
         w-[40vw]
         h-[20vh]
       ">
-        <h2 className="text-1xl font-bold leading-tight uppercase">
-            Ici Projets
+        <h2 className="text-base font-bold leading-tight">
+            Projets en cours
         </h2>
       </section>
     );

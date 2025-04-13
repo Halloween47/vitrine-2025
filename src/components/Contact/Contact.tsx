@@ -7,7 +7,7 @@ import ModalContact from './ModalContact';
 export default function ContactSection() {
 
   return (
-    <section id={styles.contact} className="text-white bg-sky-950 text-center w-[40vw] h-[20vh] flex justify-center items-center">
+    <section id={styles.contact} className="text-white bg-sky-950 text-center w-[40vw] flex justify-center items-center">
       {/* <h2 className="text-base">Me Contacter</h2> */}
       <ModalContact />
       {/* <p className="text-gray-400 text-xs w-full bg-white">
@@ -28,8 +28,6 @@ export default function ContactSection() {
           <Briefcase size={24} /> Malt
         </a>
       </div> */}
-
-      <br />
     </section>
 
     // <section id="contact" className="text-white bg-sky-950 gap-2 p-[10px]">
