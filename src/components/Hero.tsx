@@ -1,3 +1,5 @@
+import EarthGlobe from "./tests/EarthGlobe";
+
 export default function Hero() {
     return (
       <section className="
@@ -19,6 +21,9 @@ export default function Hero() {
         <p className="text-[14px] opacity-90 leading-tight pt-6">
         Créons ensemble une interface unique et performante pour votre activité.
         </p>
+        <div className="testGlobe">
+          <EarthGlobe />
+        </div>
       </section>
     );
   }
