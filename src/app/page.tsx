@@ -12,10 +12,12 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Hero />
-        <Projets />
-        <Tarifs />
-        <Ressources />
-        <Contact />
+        <div className="home-content flex flex-wrap justify-between mt-5 gap-5">
+          <Projets />
+          <Tarifs />
+          <Ressources />
+          <Contact />
+        </div>
       </main>
     </div>
   );

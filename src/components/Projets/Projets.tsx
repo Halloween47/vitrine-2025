@@ -9,9 +9,9 @@ export default function Projets() {
         bg-[#49111C]
         text-white 
         text-center
-        rounded-[5px]
+        rounded-md
         gap-5
-        w-full
+        w-[40vw]
         h-[20vh]
       ">
         <h2 className="text-1xl font-bold leading-tight uppercase">

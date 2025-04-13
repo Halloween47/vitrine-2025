@@ -11,7 +11,14 @@ const Tarifs = () => {
   };
 
   return (
-    <div className="bg-sky-400 max-w-sm mx-auto mt-6 p-6 text-center">
+    <div className="
+      bg-sky-400  
+      w-[40vw]
+      text-center
+      flex
+      justify-center
+      rounded-md
+    ">
       <Button onClick={handleClick}>
         Mes tarifs
       </Button>

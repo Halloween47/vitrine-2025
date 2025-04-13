@@ -5,13 +5,13 @@ export default function Hero() {
         flex-col 
         items-center 
         justify-center 
-        min-h-50 
+        min-h-30 
         bg-[#0E5317]
         text-white 
         text-center
         rounded-[5px]
         gap-5
-        h-[50vh]
+        h-[20vh]
       ">
         <h1 className="text-1xl font-bold leading-tight uppercase">
             Votre site mérite mieux<br/> qu’un simple template.

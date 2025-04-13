@@ -6,9 +6,11 @@ import { Mail, Linkedin, Briefcase } from "lucide-react";
 export default function ContactSection() {
 
   return (
-    <section id={styles.contact} className="text-white bg-sky-950 px-6 py-12">
-  <h2 className="text-2xl m-2">Me Contacter</h2>
-  <p className="text-gray-400">
+    <section id={styles.contact} className="text-white bg-sky-950 text-center 
+      w-[40vw]       
+        h-[20vh]">
+  <h2 className="text-base">Me Contacter</h2>
+  <p className="text-gray-400 text-xs w-full bg-white">
     Contactez-moi directement ou laissez-moi un message via le formulaire.
   </p>
 
