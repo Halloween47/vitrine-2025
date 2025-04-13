@@ -15,7 +15,7 @@ import { blue } from '@mui/material/colors';
 import { Typography } from '@mui/material';
 
 // import styles from './Contact.module.css';
-// import AddCallIcon from '@mui/icons-material/AddCall';
+import AddCallIcon from '@mui/icons-material/AddCall';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PeopleIcon from '@mui/icons-material/People';
 import EmailIcon from '@mui/icons-material/Email';
@@ -42,6 +42,9 @@ function SimpleDialog(props: SimpleDialogProps) {
   return (
     <Dialog onClose={handleClose} open={open}>
       {/* <DialogTitle>Contactez-moi directement ou laissez-moi un message via le formulaire.</DialogTitle> */}
+      <Avatar sx={{ bgcolor: blue[100], color: blue[600], mx: "auto", my: "20px", width: 54, height: 54  }}>
+        <AddCallIcon />
+      </Avatar>
       <Typography variant="subtitle1" sx={{p: "10px", textAlign: "center"}}>Contactez-moi directement ou laissez-moi un message via le formulaire.</Typography>
 <List>
       <ListItem disablePadding >
