@@ -18,20 +18,21 @@ const EarthGlobe = () => {
       0.1,
       1000
     );
-    camera.position.z = 1.5;
+    camera.position.z = 2.5;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // 👈 alpha: true pour la transparence
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
-    scene.background = null; // 👈 fond totalement transparent
+    scene.background = null; 
 
     container.appendChild(renderer.domElement);
 
     const textureLoader = new THREE.TextureLoader();
-    const earthTexture = textureLoader.load('/textures/earth_night_4096.jpg');
+    // const earthTexture = textureLoader.load('/textures/earth_night_4096.jpg');
+    const earthTexture = textureLoader.load('/textures/test.jpg');
 
-    const earthGeometry = new THREE.SphereGeometry(0.5, 64, 64);
+    const earthGeometry = new THREE.SphereGeometry(0.7, 64, 64);
     const earthMaterial = new THREE.MeshStandardMaterial({ map: earthTexture });
 
     const earth = new THREE.Mesh(earthGeometry, earthMaterial);
