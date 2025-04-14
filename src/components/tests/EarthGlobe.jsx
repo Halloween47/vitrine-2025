@@ -35,7 +35,7 @@ const EarthGlobe = () => {
     const earthTexture = textureLoader.load('/textures/coc.png');
     // const earthTexture = textureLoader.load('/textures/moon_1024.jpg');
 
-    const earthGeometry = new THREE.SphereGeometry(1.5, 64, 64);
+    const earthGeometry = new THREE.SphereGeometry(0.8, 64, 64);
     const earthMaterial = new THREE.MeshStandardMaterial({ map: earthTexture });
 
     const earth = new THREE.Mesh(earthGeometry, earthMaterial);
