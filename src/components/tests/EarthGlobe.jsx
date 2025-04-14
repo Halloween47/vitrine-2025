@@ -20,7 +20,7 @@ const EarthGlobe = () => {
     );
     camera.position.z = 2.5;
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // 👈 alpha: true pour la transparence
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); 
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
@@ -47,7 +47,8 @@ const EarthGlobe = () => {
 
     const animate = () => {
       requestAnimationFrame(animate);
-      earth.rotation.y += 0.0015;
+      // earth.rotation.y += 0.0015;
+      earth.rotation.y += 0.015;
       renderer.render(scene, camera);
     };
     animate();
