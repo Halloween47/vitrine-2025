@@ -30,9 +30,12 @@ const EarthGlobe = () => {
 
     const textureLoader = new THREE.TextureLoader();
     // const earthTexture = textureLoader.load('/textures/earth_night_4096.jpg');
-    const earthTexture = textureLoader.load('/textures/test.jpg');
+    // const earthTexture = textureLoader.load('/textures/test.jpg');
+    // const earthTexture = textureLoader.load('/textures/test2.jpg');
+    const earthTexture = textureLoader.load('/textures/coc.png');
+    // const earthTexture = textureLoader.load('/textures/moon_1024.jpg');
 
-    const earthGeometry = new THREE.SphereGeometry(0.7, 64, 64);
+    const earthGeometry = new THREE.SphereGeometry(1.5, 64, 64);
     const earthMaterial = new THREE.MeshStandardMaterial({ map: earthTexture });
 
     const earth = new THREE.Mesh(earthGeometry, earthMaterial);
