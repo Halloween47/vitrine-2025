@@ -48,7 +48,7 @@ const EarthGlobe = () => {
     const animate = () => {
       requestAnimationFrame(animate);
       // earth.rotation.y += 0.0015;
-      earth.rotation.y += 0.015;
+      earth.rotation.y += 0.055;
       renderer.render(scene, camera);
     };
     animate();
