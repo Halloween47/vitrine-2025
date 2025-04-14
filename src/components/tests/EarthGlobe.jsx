@@ -69,14 +69,13 @@ const EarthGlobe = () => {
     <div
       ref={containerRef}
       style={{
-        width: '50vw',
-        height: '50vh',
-        overflow: 'hidden',
+        width: '40vw',
+        height: '40vh',
+        // overflow: 'hidden',
         touchAction: 'none',
         backgroundColor: 'transparent' ,
-        position: 'absolute',
-        top: 0,
-        left: 0,
+        position: "absolute",
+        top: "-70px", right: 0
       }}
     />
   );
