@@ -14,7 +14,7 @@ export default function Hero() {
         h-[20vh]
         relative
       ">
-        <div className="hero-disposition w-[60%] flex flex-col justify-center">
+        <div className="hero-disposition w-[80%] flex flex-col justify-center pl-5">
           <h1 className="text-xs font-bold leading-tight uppercase">
               Votre site mérite mieux<br/> qu’un simple template.
           </h1>

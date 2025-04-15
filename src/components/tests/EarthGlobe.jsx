@@ -30,11 +30,10 @@ const EarthGlobe = () => {
 
     const textureLoader = new THREE.TextureLoader();
     // const earthTexture = textureLoader.load('/textures/earth_night_4096.jpg');
-    // const earthTexture = textureLoader.load('/textures/test.jpg');
-    // const earthTexture = textureLoader.load('/textures/test2.jpg');
-    const earthTexture = textureLoader.load('/textures/coc.png');
-    // const earthTexture = textureLoader.load('/textures/moon_1024.jpg');
-
+    // const earthTexture = textureLoader.load('/textures/moon.jpg');
+    const earthTexture = textureLoader.load('/textures/earth_specular_2048.jpg');
+    // const earthTexture = textureLoader.load('/textures/beluga-cat-meme-idlememe-5.jpg');
+    
     const earthGeometry = new THREE.SphereGeometry(0.8, 64, 64);
     const earthMaterial = new THREE.MeshStandardMaterial({ map: earthTexture });
 
@@ -48,7 +47,7 @@ const EarthGlobe = () => {
     const animate = () => {
       requestAnimationFrame(animate);
       // earth.rotation.y += 0.0015;
-      earth.rotation.y += 0.055;
+      earth.rotation.y += 0.0060;
       renderer.render(scene, camera);
     };
     animate();
@@ -80,7 +79,7 @@ const EarthGlobe = () => {
         touchAction: 'none',
         backgroundColor: 'transparent' ,
         position: "absolute",
-        top: "-70px", right: 0
+        top: "-130px", right: "-30px"
       }}
     />
   );

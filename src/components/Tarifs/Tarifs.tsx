@@ -19,7 +19,8 @@ const Tarifs = () => {
       justify-center
       rounded-md
     ">
-      <Button onClick={handleClick}>
+      <Button onClick={handleClick} className="
+      font-bold text-base">
         Mes tarifs
       </Button>
     </div>

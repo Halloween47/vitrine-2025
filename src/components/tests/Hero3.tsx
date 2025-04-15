@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero3() {
     return (
       <section className="flex flex-col items-center justify-center min-h-screen px-6 bg-gradient-to-b from-blue-600 to-blue-800 text-white text-center">
         <h1 className="text-4xl font-bold leading-tight">
