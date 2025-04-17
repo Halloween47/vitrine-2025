@@ -7,12 +7,16 @@ import styles from "./page.module.css";
 import Ressources from "@/components/Ressources/Ressources";
 import Projets from "@/components/Projets/Projets";
 import Tarifs from "@/components/Tarifs/Tarifs";
+import BetaBanner from "@/components/Beta/BetaBanner";
+import HeroDemo from "@/components/Demo/HeroDemo";
 
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <BetaBanner />
+        <HeroDemo />
         <Hero1 />
         <Hero3 />
         <Hero />
