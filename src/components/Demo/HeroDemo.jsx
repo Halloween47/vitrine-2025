@@ -38,7 +38,7 @@ const HeroDemo = () => {
       {/* iPhone Carousel */}
       <div className="max-w-sm mx-auto relative">
         <div className='relative bg-white'>
-          <iframe className=' border-[1px] border-gray-700 w-[90vw] h-[80vh] z-33 absolute left-0' src="https://embed.figma.com/proto/sCNA2RHeSvhp5q41g9UV0R/VITRINE-2025?node-id=983-1960&scaling=scale-down&content-scaling=fixed&page-id=932%3A290&starting-point-node-id=983%3A1960&embed-host=share" ></iframe>
+          <iframe className=' border-[1px] border-gray-700 w-[60vw] h-[80vh] z-33 absolute left-0' src="https://embed.figma.com/proto/sCNA2RHeSvhp5q41g9UV0R/VITRINE-2025?node-id=983-1960&scaling=scale-down&content-scaling=fixed&page-id=932%3A290&starting-point-node-id=983%3A1960&embed-host=share" ></iframe>
           <img src="/mockups/test2.png" className='w-full absolute z-5' />
             {/* <iframe src="/boat.jpg"
               className='absolute top-[60px] left-[28px] z-1'>
