@@ -37,13 +37,13 @@ const HeroDemo = () => {
 
       {/* iPhone Carousel */}
       <div className="max-w-sm mx-auto relative">
-        <div className='relative w-[300px]'>
-          {/* <img src="/mockups/test2.png" className='relative z-2' />
-          <iframe src="/boat.jpg"
-             className='absolute top-[60px] left-[28px] z-1'>
-          </iframe> */}
-          <iframe className='border-solid border-[1px] border-black w-[70vw] h-[80vh] mx-auto' src="https://embed.figma.com/proto/sCNA2RHeSvhp5q41g9UV0R/VITRINE-2025?node-id=983-1960&scaling=scale-down&content-scaling=fixed&page-id=932%3A290&starting-point-node-id=983%3A1960&embed-host=share" ></iframe>
-</div>
+        <div className='relative bg-white'>
+          <iframe className=' border-[1px] border-gray-700 w-[90vw] h-[80vh] z-33 absolute left-0' src="https://embed.figma.com/proto/sCNA2RHeSvhp5q41g9UV0R/VITRINE-2025?node-id=983-1960&scaling=scale-down&content-scaling=fixed&page-id=932%3A290&starting-point-node-id=983%3A1960&embed-host=share" ></iframe>
+          <img src="/mockups/test2.png" className='w-full absolute z-5' />
+            {/* <iframe src="/boat.jpg"
+              className='absolute top-[60px] left-[28px] z-1'>
+            </iframe> */}
+        </div>
 {/* 
         <Slider {...settings}>
           {mockups.map((src, index) => (
