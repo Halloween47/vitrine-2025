@@ -71,14 +71,14 @@ export default function ServicesCarousel() {
         //   <SwiperSlide key={index}  className="w-[70vw]">
           <SwiperSlide key={index}>
             <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-200">
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-800">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
               <ul className="mb-4 text-sm text-gray-700 space-y-1">
                 {service.features.map((feature, i) => (
                   <li key={i}>✅ {feature}</li>
                 ))}
               </ul>
-              <div className="text-lg font-bold mb-4">{service.price}</div>
+              <div className="text-lg font-bold mb-4 text-gray-700">{service.price}</div>
               <button className="w-full bg-black text-white py-2 rounded-xl hover:bg-gray-900 transition">
                 Me contacter
               </button>
