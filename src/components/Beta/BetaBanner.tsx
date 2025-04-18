@@ -13,6 +13,8 @@ const BetaBanner = () => {
       marginBottom: '20px'
     }}>
       ⚠️ Version BETA : le site est en cours de construction.
+      {/* ⚠️ Version <em>BETA</em> : le site est en cours de construction. */}
+      {/* ⚠️ Version BETA<br/>le site est en cours de construction. */}
     </div>
   );
 };
