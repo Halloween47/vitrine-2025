@@ -54,7 +54,8 @@ export default function ServicesCarousel() {
         modules={[Pagination]}
         pagination={{ clickable: true }}
         spaceBetween={16}
-        slidesPerView={1} 
+        slidesPerView={1.1} 
+        centeredSlides={true} 
         speed={600}
         resistanceRatio={0.85}
         threshold={10}
@@ -64,9 +65,11 @@ export default function ServicesCarousel() {
         >
 
 
+
         {services.map((service, index) => (
         //   <SwiperSlide key={index}  className="!w-full">
-          <SwiperSlide key={index}  className="w-[70vw]">
+        //   <SwiperSlide key={index}  className="w-[70vw]">
+          <SwiperSlide key={index}>
             <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-200">
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
