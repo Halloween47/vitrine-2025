@@ -1,18 +1,22 @@
-'use client'
+'use client';
 
-import React from 'react';
-import Lottie from 'lottie-react';
+import React, { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
+
+// Import dynamique de Lottie
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const Dispo = () => {
-  const [animationData, setAnimationData] = React.useState(null);
+  const [animationData, setAnimationData] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch('/animations/dispo.json')
       .then(res => res.json())
       .then(data => setAnimationData(data));
   }, []);
 
   if (!animationData) return null;
+
   return (
     <div style={{
       position: 'relative',
