@@ -54,7 +54,7 @@ export default function ServicesCarousel() {
         modules={[Pagination]}
         pagination={{ clickable: true }}
         spaceBetween={16}
-        slidesPerView={0.85} 
+        slidesPerView={1.2} 
         centeredSlides={true} 
         speed={600}
         resistanceRatio={0.85}
