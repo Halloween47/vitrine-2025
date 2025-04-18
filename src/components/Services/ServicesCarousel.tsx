@@ -65,7 +65,8 @@ export default function ServicesCarousel() {
 
 
         {services.map((service, index) => (
-          <SwiperSlide key={index}  className="!w-full">
+        //   <SwiperSlide key={index}  className="!w-full">
+          <SwiperSlide key={index}  className="w-[70vw]">
             <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-200">
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
