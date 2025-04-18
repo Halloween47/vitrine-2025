@@ -2,9 +2,17 @@
 
 import React from 'react';
 import Lottie from 'lottie-react';
-import animationData from '../../../public/animations/dispo.json'; 
 
 const Dispo = () => {
+  const [animationData, setAnimationData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch('/animations/dispo.json')
+      .then(res => res.json())
+      .then(data => setAnimationData(data));
+  }, []);
+
+  if (!animationData) return null;
   return (
     <div style={{
       position: 'relative',

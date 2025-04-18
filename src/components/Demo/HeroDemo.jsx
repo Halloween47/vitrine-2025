@@ -24,7 +24,7 @@ const HeroDemo = () => {
 
   return (
     <section className=" bg-black text-center py-16 px-0 relative">
-      Bienvenu
+      Bienvenue
       <div className="max-w-2xl mx-auto mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
         Transformez vos idées en expériences web exceptionnelles
