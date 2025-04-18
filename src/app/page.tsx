@@ -9,6 +9,7 @@ import Projets from "@/components/Projets/Projets";
 import Tarifs from "@/components/Tarifs/Tarifs";
 import BetaBanner from "@/components/Beta/BetaBanner";
 import HeroDemo from "@/components/Demo/HeroDemo";
+import Dispo from "@/components/Beta/Dispo";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <BetaBanner />
+        <Dispo />
         <HeroDemo />
         <Hero1 />
         <Hero3 />

@@ -23,7 +23,7 @@ const HeroDemo = () => {
   };
 
   return (
-    <section className=" bg-black text-center py-16 px-0">
+    <section className=" bg-black text-center py-16 px-0 relative">
       Bienvenu
       <div className="max-w-2xl mx-auto mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -43,9 +43,9 @@ const HeroDemo = () => {
               className='absolute top-[60px] left-[28px] z-1'>
             </iframe>
         </div> */}
-        <Slider {...settings}>
+        {/* <Slider {...settings}>
           <img src="/mockups/test.png" className='w-full  z-5 absolute' />
-        </Slider>
+        </Slider> */}
 
         <Slider {...settings}>
           {mockups.map((src, index) => (
@@ -54,7 +54,6 @@ const HeroDemo = () => {
                 <img
                   src="/mockups/elu.png"
                   alt="iPhone"
-                  // className="size-dvm"
                 />
                 {/* <img
                   src={src}
