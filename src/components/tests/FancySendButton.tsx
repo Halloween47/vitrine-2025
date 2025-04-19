@@ -18,7 +18,7 @@ export default function FancySendButton() {
       <button
         onClick={handleClick}
         className={clsx(
-          "relative w-[250px] h-[50px] bg-black rounded-[10px] text-[18px] font-light tracking-wider border-none focus:outline-none transition duration-500 pl-[58px] flex items-center justify-start",
+          "relative w-[250px] h-[50px] bg-[#50d71e] rounded-[10px] text-[18px] font-light tracking-wider border-none focus:outline-none transition duration-500 pl-[58px] flex items-center justify-start",
           sent && "bg-blue-100 text-blue-600"
         )}
       >
