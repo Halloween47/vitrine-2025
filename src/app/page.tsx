@@ -15,6 +15,7 @@ import Dispo from "@/components/Beta/Dispo";
 // import Services from "@/components/Services/Services";
 // import TestServicesCard from "@/components/Services/TestServiceCard";
 import ServicesCarousel from "@/components/Services/ServicesCarousel";
+import FancySendButton from "@/components/tests/FancySendButton";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <BetaBanner />
         <Dispo />
         <HeroDemo />
+        <FancySendButton />
         {/* <Hero1 /> */}
         {/* <Hero3 /> */}
         {/* <TestServicesCard /> */}
