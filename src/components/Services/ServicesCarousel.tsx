@@ -48,16 +48,16 @@ const services = [
 
 export default function ServicesCarousel() {
   return (
-    <div className="px-1 py-8 w-[100vw]">
+    <div className="pl-5 py-8 w-[100vw]">
       <div className="">
-        <h2 className="text-2xl font-bold text-center mb-6">Mes Services</h2>
+        <h2 className="text-2xl font-bold text-left mb-6">Mes Services</h2>
       </div>
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}
         spaceBetween={16}
         slidesPerView={1.4} 
-        centeredSlides={true} 
+        // centeredSlides={true} 
         speed={600}
         resistanceRatio={0.85}
         threshold={10}
