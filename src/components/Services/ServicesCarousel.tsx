@@ -48,13 +48,15 @@ const services = [
 
 export default function ServicesCarousel() {
   return (
-    <div className="px-4 py-8 w-[100vw]">
-      <h2 className="text-2xl font-bold text-center mb-6">Mes Services</h2>
+    <div className="px-1 py-8 w-[100vw]">
+      <div className="">
+        <h2 className="text-2xl font-bold text-center mb-6">Mes Services</h2>
+      </div>
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}
         spaceBetween={16}
-        slidesPerView={1.2} 
+        slidesPerView={1.4} 
         centeredSlides={true} 
         speed={600}
         resistanceRatio={0.85}
@@ -70,7 +72,7 @@ export default function ServicesCarousel() {
         //   <SwiperSlide key={index}  className="!w-full">
         //   <SwiperSlide key={index}  className="w-[70vw]">
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-200">
+            <div className="bg-white rounded-md p-6 shadow-md border border-gray-200">
               <h3 className="text-xl font-semibold mb-2 text-gray-800">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
               <ul className="mb-4 text-sm text-gray-700 space-y-1">
