@@ -3,7 +3,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, Phone, Linkedin, ExternalLink } from 'lucide-react'
+import { Mail, Phone, Linkedin, ExternalLink, Github } from 'lucide-react'
 import { Button } from '@mui/material'
 
 export default function ContactBubble() {
@@ -32,6 +32,11 @@ export default function ContactBubble() {
       href: 'mailto:lecontethomas.contact@proton.me',
       icon: <Mail size={18} />,
     },
+    {
+        label: 'GitHub',
+        href: 'https://github.com/Halloween47',
+        icon: <Github size={18} />,
+      },
   ]
 
   return (
