@@ -4,7 +4,7 @@
 // import Hero3 from "@/components/tests/Hero3";
 // import ServicesButtonGroup from "@/components/Services/ServicesButtonGroup";
 // import ServicesCards from "@/components/Services/ServicesCard";
-// import Contact from "@/components/Contact/Contact";
+import Contact from "@/components/Contact/Contact";
 import styles from "./page.module.css";
 // import Ressources from "@/components/Ressources/Ressources";
 // import Projets from "@/components/Projets/Projets";
@@ -16,6 +16,8 @@ import Dispo from "@/components/Beta/Dispo";
 // import TestServicesCard from "@/components/Services/TestServiceCard";
 import ServicesCarousel from "@/components/Services/ServicesCarousel";
 import FancySendButton from "@/components/tests/FancySendButton";
+import ServicePerso from "@/components/Beta/ServicePerso";
+import ContactBubble from "@/components/Contact/ContactBubble";
 
 
 export default function Home() {
@@ -30,6 +32,9 @@ export default function Home() {
         {/* <Hero3 /> */}
         {/* <TestServicesCard /> */}
         <ServicesCarousel />
+        <ServicePerso />
+        <Contact />
+        <ContactBubble />
         {/* <ServicesButtonGroup /> */}
         {/* <ServicesCards /> */}
         {/* <Services /> */}
