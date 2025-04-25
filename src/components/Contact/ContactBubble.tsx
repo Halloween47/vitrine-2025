@@ -19,7 +19,7 @@ export default function ContactBubble() {
     },
     {
       label: 'LinkedIn',
-      href: 'www.linkedin.com/in/thomaslecontedeveloppeur',
+      href: 'https://www.linkedin.com/in/thomaslecontedeveloppeur',
       icon: <Linkedin size={18} />,
     },
     {
