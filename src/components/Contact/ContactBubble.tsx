@@ -4,6 +4,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mail, Phone, Linkedin, ExternalLink } from 'lucide-react'
+import { Button } from '@mui/material'
 
 export default function ContactBubble() {
   const [open, setOpen] = useState(false)
@@ -13,22 +14,22 @@ export default function ContactBubble() {
   const links = [
     {
       label: 'Malt',
-      href: 'https://www.malt.fr/profile/tonprofil',
+      href: 'https://www.malt.fr/profile/thomasleconte2',
       icon: <ExternalLink size={18} />,
     },
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/tonprofil/',
+      href: 'www.linkedin.com/in/thomaslecontedeveloppeur',
       icon: <Linkedin size={18} />,
     },
     {
       label: 'Téléphone',
-      href: 'tel:+33600000000',
+      href: 'tel:+33611306412',
       icon: <Phone size={18} />,
     },
     {
       label: 'Email',
-      href: 'mailto:contact@tonmail.com',
+      href: 'mailto:lecontethomas.contact@proton.me',
       icon: <Mail size={18} />,
     },
   ]
@@ -36,12 +37,15 @@ export default function ContactBubble() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <div className="relative">
-        <button
+        {/* <button */}
+        <Button
+         variant="contained"
           onClick={toggleBubble}
-          className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 shadow-lg transition-colors"
+          className="bg-blue-600 hover:bg-blue-700 text-white rounded px-4 py-2 shadow-lg transition-colors"
         >
           Contact
-        </button>
+        {/* </button> */}
+        </Button>
 
         <AnimatePresence>
           {open && (
