@@ -148,7 +148,7 @@ export default function ServicesCarousel() {
                 ))}
               </ul>
               {/* <button className=" bg-black text-white py-2 rounded hover:bg-gray-900 transition absolute bottom-3"> */}
-              <button className=" bg-black text-white py-2 rounded hover:bg-gray-900 transition">
+              <button className=" bg-black text-white py-3 rounded hover:bg-gray-900 transition">
                 Me contacter
               </button>
             </div>
