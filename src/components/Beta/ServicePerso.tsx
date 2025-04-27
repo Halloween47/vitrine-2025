@@ -13,7 +13,7 @@ const ServicePerso = () => {
       borderRadius: '5px',
       marginBottom: '20px'
     }}>
-      Parseque chaque probleme est unique, Parlons de votre probleme spécifique (voir mes projets et solutions apportés)
+      Car chaque problème est unique, parlons de votre problème spécifique. (voir mes projets et solutions apportés)
     </div>
   );
 };
