@@ -3,7 +3,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, Phone, Linkedin, ExternalLink, Github } from 'lucide-react'
+import { Mail, Phone, Linkedin, Github, Handshake } from 'lucide-react'
 import { Button } from '@mui/material'
 
 export default function ContactBubble() {
@@ -15,7 +15,7 @@ export default function ContactBubble() {
     {
       label: 'Malt',
       href: 'https://www.malt.fr/profile/thomasleconte2',
-      icon: <ExternalLink size={18} />,
+      icon: <Handshake size={18} />,
     },
     {
       label: 'LinkedIn',

@@ -9,7 +9,8 @@ import { Pagination } from 'swiper/modules';
 
 const services = [
   {
-    title: "Landing page sur-mesure",
+    title: "Landing page",
+    test: "sur mesure",
     price: "350 €",
     description: "Une page unique, moderne et optimisée pour convertir vos visiteurs en clients.",
     features: [
@@ -137,15 +138,16 @@ export default function ServicesCarousel() {
         //   <SwiperSlide key={index}  className="w-[70vw]">
           <SwiperSlide key={index}>
             <div className="bg-white rounded-md p-6 shadow-md border border-gray-200">
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">{service.title}</h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
+              <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
+              <em className="text-sm text-gray-800">{service.test}</em>
+              <p className="text-gray-600 mt-2 mb-4">{service.description}</p>
+                <div className="text-[2rem] font-bold mb-4 text-gray-700 text-center">{service.price}</div>
               <ul className="mb-4 text-sm text-gray-700 space-y-1">
                 {service.features.map((feature, i) => (
                   <li key={i}>✅ {feature}</li>
                 ))}
               </ul>
-              <div className="text-lg font-bold mb-4 text-gray-700">{service.price}</div>
-              <button className="w-full bg-black text-white py-2 rounded-xl hover:bg-gray-900 transition">
+              <button className="w-full bg-black text-white py-2 rounded hover:bg-gray-900 transition">
                 Me contacter
               </button>
             </div>
