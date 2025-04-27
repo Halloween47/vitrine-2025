@@ -134,20 +134,21 @@ export default function ServicesCarousel() {
 
 
         {services.map((service, index) => (
-        //   <SwiperSlide key={index}  className="!w-full">
-        //   <SwiperSlide key={index}  className="w-[70vw]">
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-md p-6 shadow-md border border-gray-200">
+            {/* <div className="bg-white rounded-md p-6 shadow-md border border-gray-200 h-[500px] flex flex-col"> */}
+            <div className="bg-white rounded-md p-6 shadow-md border border-gray-200 h-[500px] flex flex-col justify-between">
               <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
               <em className="text-sm text-gray-800">{service.test}</em>
               <p className="text-gray-600 mt-2 mb-4">{service.description}</p>
                 <div className="text-[2rem] font-bold mb-4 text-gray-700 text-center">{service.price}</div>
-              <ul className="mb-4 text-sm text-gray-700 space-y-1">
+              {/* <ul className="mb-4 text-sm text-gray-700 space-y-1"> */}
+              <ul className="mb-4 text-sm text-gray-700 space-y-1 h-[200px]">
                 {service.features.map((feature, i) => (
                   <li key={i}>✅ {feature}</li>
                 ))}
               </ul>
-              <button className="w-full bg-black text-white py-2 rounded hover:bg-gray-900 transition">
+              {/* <button className=" bg-black text-white py-2 rounded hover:bg-gray-900 transition absolute bottom-3"> */}
+              <button className=" bg-black text-white py-2 rounded hover:bg-gray-900 transition">
                 Me contacter
               </button>
             </div>
