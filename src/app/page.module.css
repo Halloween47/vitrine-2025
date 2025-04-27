@@ -129,7 +129,8 @@ a.secondary {
 @media (max-width: 600px) {
   .page {
     padding: 22px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
+    padding-bottom: 150px;
   }
 
   .main {
