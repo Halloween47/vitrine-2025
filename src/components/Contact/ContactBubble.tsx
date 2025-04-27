@@ -48,7 +48,8 @@ export default function ContactBubble() {
           onClick={toggleBubble}
           className="bg-blue-600 hover:bg-blue-700 text-white rounded px-4 py-2 shadow-lg transition-colors"
         >
-          Contact
+          {/* Contact */}
+          Une Question ?
         {/* </button> */}
         </Button>
 
