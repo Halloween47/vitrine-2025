@@ -128,7 +128,7 @@ export default function ServicesCarousel() {
         threshold={10}
         touchRatio={0.5}
         grabCursor={true}
-        className="pb-8"
+        className="pb-8 custom-swiper-pagination"
         >
 
 

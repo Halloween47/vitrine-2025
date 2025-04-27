@@ -50,3 +50,13 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Custom styles pour Swiper dots */
+.custom-swiper-pagination .swiper-pagination-bullet {
+  background-color: #d1d5db; /* Couleur des dots normaux (ex: gray-300) */
+  opacity: 1; /* Pour éviter le fade par défaut */
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0af82e; /* Couleur du dot actif (ex: noir) */
+}
