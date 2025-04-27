@@ -3,6 +3,7 @@ import React from 'react';
 const ServicePerso = () => {
   return (
     <div style={{
+      width: '90%',
       backgroundColor: 'rgb(35, 20, 151)',
       padding: '10px 20px',
       textAlign: 'center',
