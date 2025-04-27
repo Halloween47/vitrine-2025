@@ -18,6 +18,7 @@ import ServicesCarousel from "@/components/Services/ServicesCarousel";
 import FancySendButton from "@/components/tests/FancySendButton";
 import ServicePerso from "@/components/Beta/ServicePerso";
 import ContactBubble from "@/components/Contact/ContactBubble";
+import MobileNavbar from "@/components/Menu/MobileNavbar";
 
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
         <ServicePerso />
         <Contact />
         <ContactBubble />
+        <MobileNavbar />
         {/* <ServicesButtonGroup /> */}
         {/* <ServicesCards /> */}
         {/* <Services /> */}
